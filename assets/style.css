@@ -107,7 +107,7 @@ header {
         background-color: #012030f8;
         transform: translateX(-45%);
         padding: 25px;
-        transition: 1s;
+        transition: .2s;
         opacity: 0;
     }
 
@@ -888,21 +888,21 @@ header {
     height: 300px;
 }
 
-.blog .posts.cards-blog.ativo {
+.blog .posts.ativo.cards-blog {
     display: grid;
     grid-template-columns: 1fr;
 }
-.blog .posts.cards-blog.ativo .card-blog{
+.blog .posts.ativo.cards-blog .card-blog{
   flex-direction: row;
     width: 100%;
     
 }
 
-.blog .posts.cards-blog.ativo .card-blog img{
+.blog .posts.ativo.cards-blog .card-blog img{
     width: 40%;
 }
 
-.blog .posts.cards-blog.ativo .card-blog span{ 
+.blog .posts.ativo.cards-blog .card-blog span{ 
     width: 50%;
     display: flex;
     justify-content: space-evenly;
