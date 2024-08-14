@@ -101,7 +101,7 @@ header {
         z-index: -99;
         position: absolute;
         top: 67px;
-        left: 0;
+        left: -900px;
         gap: 0;
         width: 100vw;
         background-color: #012030f8;
@@ -115,6 +115,7 @@ header {
         transition: 1s;
         opacity: 1;
         z-index: 10;
+        left: 0px;
     }
 
     .menu-link {
@@ -220,20 +221,20 @@ header {
 }
 
 @media (max-width: 975px) {
-    .banner-home .banner-texto h1 {
+    .banner-home .banner-texto h1{
         font-size: 7em;
         margin-left: 0;
     }
 }
 
 @media (max-width: 675px) {
-    .banner-home .banner-texto h1 {
+    .banner-home .banner-texto h1{
         font-size: 6em;
     }
 }
 
 @media (max-width: 500px) {
-    .banner-home .banner-texto h1 {
+    .banner-home .banner-texto h1{
         font-size: 4em;
     }
 }
@@ -908,4 +909,31 @@ header {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+}
+
+@media (max-width: 875px){
+
+    .blog .posts.cards-blog{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .banner-blog .banner-texto .titulo{
+        font-size: 4em;
+    }
+
+}
+
+@media (max-width: 675px){
+    .blog .posts.cards-blog, .blog .posts.ativo.cards-blog .card-blog{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .organizador{
+        display: none;
+    }
+
+    .banner-blog .banner-texto .titulo{
+        font-size: 2em;
+    }
 }
